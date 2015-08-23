@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="menu2.css " rel="stylesheet" />
+<script src="hover.js" type="text/javascript">
+function addhover() {
+   var navli,i;
+   // loop through all elements in the nav
+   navli = document.getElementById('centeredmenu').getElementsByTagName('li')
+   for(i=0;i<navli.length;i++) {
+      // add the hover functions to the li onmouseover and onmouseout
+      navli[i].onmouseover=function(){hover(this,'hover');};
+      navli[i].onmouseout=function(){hover(this,'');};
+   }
+}
+function hover(o,sClass) {
+   if (o) {
+      o.className = sClass;
+   }
+}
+addhover();// JavaScript Document
+</script>
+</head>
+
+<body>
+<div id="centeredmenu">
+   <ul>
+      <li><a href="#">Tab one</a>
+         <ul>
+            <li><a href="#">Link one</a></li>
+            <li><a href="#">Link two</a></li>
+            <li><a href="#">Link three</a></li>
+            <li><a href="#">Link four</a></li>
+            <li><a href="#">Link five</a></li>
+         </ul>
+      </li>
+      <li class="active"><a href="#" class="active">Tab two</a>
+         <ul>
+            <li><a href="#">Link one</a></li>
+            <li><a href="#">Link two</a></li>
+            <li><a href="#">Link three</a></li>
+            <li><a href="#">Link four</a></li>
+            <li><a href="#">Link five is a long link that wraps</a></li>
+         </ul>
+      </li>
+      <li><a href="#">Long tab three</a>
+         <ul>
+            <li><a href="#">Link one</a></li>
+            <li><a href="#">Link two</a></li>
+            <li><a href="#">Link three</a></li>
+            <li><a href="#">Link four</a></li>
+            <li><a href="#">Link five</a></li>
+         </ul>
+      </li>
+      <li><a href="#">Tab four</a>
+         <ul class="last">
+            <li><a href="#">Link one</a></li>
+            <li><a href="#">Link two</a></li>
+            <li><a href="#">Link three</a></li>
+            <li><a href="#">Link four</a></li>
+            <li><a href="#">Link five</a></li>
+         </ul>
+      </li>
+   </ul>
+</div>
+
+</body>
+</html>

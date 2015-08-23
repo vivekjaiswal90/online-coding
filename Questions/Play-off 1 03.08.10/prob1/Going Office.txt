@@ -1,0 +1,59 @@
+Ms.Kox enjoys a nice job of her interest, but she does not like to waste much time on going-to/coming-from office. She is now aware of the route to her office that has the smallest length, after all she is working there for past five years.
+
+The recent maintenance of roads that has started is an issue now. Every day a road get blocked because of the maintenance and no one can use it that day( however all other roads can be used ). You are her new intern and this task is for you. You need to determine for each day the minimum distance that she has to travel to reach her office.
+
+Input Format:
+
+There are N cities numbered 0 to N-1 and M bidirectional roads.
+First line of the input contains two integers N and M.
+Then follows M lines each containing three space-separated integers u , v and w, which means that there is a bi-directional road connecting city u and city v , and w is the length of this road.There is at most one road between any two cities and no road connects a city to itself.
+Next line contains two integers S and D, S is the city in which Mr. Kox lives and D is the city in which her office is located.
+Next line contains an integer Q, the number of queries.
+Then follows Q lines each containing two integers u and v , which tells that the road between city u and city v is blocked on that day.
+
+Output Format:
+
+Q lines , each line containing minimum distance Ms.Kox has to travel on that day.If there is no path print "Infinty" (quotes for clarity).
+
+Constraints:
+0 < N < 200,000
+0 < M < 200,000
+0 < Q < 200,000
+0 <= S , D < N
+
+Sample input:
+
+6 9
+0 1 1
+1 2 1
+2 3 1
+3 4 1
+4 5 1
+2 4 5
+3 5 8
+1 3 3
+0 2 4
+0 5
+9
+0 1
+1 2
+2 3
+3 4
+4 5
+2 4
+3 5
+1 3
+0 2
+
+
+Sample output :
+
+7
+6
+6
+8
+11
+5
+5
+5
+5

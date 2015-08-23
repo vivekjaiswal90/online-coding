@@ -1,0 +1,31 @@
+A sequence in which the value of elements first decrease and then increase is called V- Sequence. In a valid V-Sequence there should be at least one element in the decreasing and at least one element in the increasing arm.
+
+For example, "5 3 1 9 17 23" is a valid V-Sequence having two elements in the decreasing arm namely 5 and 3, and 3 elements in the increasing arm namely 9, 17 and 23 . But none of the sequence "6 4 2" or "8 10 15" are V-Sequence since "6 4 2" has no element in the increasing part while "8 10 15" has no element in the decreasing part.
+
+A sub-sequence of a sequence is obtained by deleting zero or more elements from the sequence. So by this definition "7", "2 10", "8 2 7 6", "8 2 7 10 6" etc are valid sub-sequences of "8 2 7 10 6" but not "7 8 10" , "8 9 11".
+  
+Given a sequence of N numbers find its longest sub-sequence which is a V-Sequence.
+
+Intput Format:
+
+First line contains an integer  N , the number of element in the given sequnce.
+Next line contains N space seperated integer A1, A2.... An,  Ai is ith element of the given sequence.
+
+Output Format:
+
+Print the length of the longest V-Subsequence of the given sequence.
+
+Note :- A sequence with only one element is is not a V-Sequence and no two adjecent elements in a V-Sequence are of same value. 
+ 
+Constraint:
+0 <= N <= 200000 
+0 <= Ai <= 200000 
+
+Sample input:
+7
+3 2 4 4 3 2 3
+
+Sample output:
+4
+
+Explanation: One possible V-sequence of length 4 that is a subsequence of the given sequence is "4 3 2 3". 

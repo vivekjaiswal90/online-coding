@@ -1,0 +1,48 @@
+"Adzen" has a unique policy of making teams in the company . CEO of "Adzen" Ms.Rox makes a list of employees and associates certain skill value to each one of them. She randomly shuffles the list, so as to maintain uniformity in the company and then start to form new teams.
+Say in the shuffled list, the employees(skill values) are in order: 3 1 2 5 4 9 7 6 8 10, she takes the first person and make him in-charge of all consecutive people with skill value less than him and continues the process until all people are done. In this case, 3 is made in-charge of 1 and 2; 5 is made in-charge of 4 ; 9 is made in-charge of 7, 6 and 8 ; 10 is made in-charge of himself. Thus for this arrangement a total of 4 teams are created.
+
+There is a very popular group in "Adzen" that currently manages sales and people in this group are very connected to each other. Before the new teams are made out, this group wants to know how many arrangements/permutations of all the employees exist such that after Ms. Rox makes teams out of this arrangement in the manner described, all of them are assigned to same team, there might be other people too with them in their new team.
+
+Input Format:
+
+First line is the number of test-cases T.
+Then follows T test-cases.
+Each of the test-case has format: first line contains N, the number of employees. Then follow N lines where ith line contains an integer which is the skill value of the ith employee. Next line contains an integer K, number of people in the sales-group who still want to be in same team. Then follows K lines, where ith line is the strength of the ith person of this group.
+
+
+Note: Skill values of all employees are distinct.
+
+Output Format:
+
+For each test-case output the required number of permutations/arrangements of employees such that the sales-group people get the same team possibly with some more other people. Print the answer of each test-case in a separate line modulo 1,000,000,007.
+
+Sample Input:
+
+2
+
+4
+2 4 3 5
+
+2
+3 5
+
+3
+4 2 10
+
+2
+4 10
+
+Sample Ouput:
+
+12
+3
+
+Explanation:
+In the second test-case all possible arrangements are "4 2 10"( [4 2], [10] ), "4 10 2"( [4], [10 2] ), "2 4 10"( [2], [4], [10] ), "2 10 4"( [2], [10 4] ), "10 2 4"( [10 2 4] ) and "10 4 2"( [10 4 2] ). Clearly in three arrangements employees of skill 4 and 10 are in same team.
+
+Note: In sample input the formatting with some spaces is done for clarity but the input given to the program will be exactly according to the input format described.
+
+Constrains:
+1 <= T <= 100
+1 <= K <= N <= 1000
+1 <= S <= 10000, S is the skill value of any employee

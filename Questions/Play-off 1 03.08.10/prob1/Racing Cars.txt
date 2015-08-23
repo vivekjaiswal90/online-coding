@@ -1,0 +1,30 @@
+There are N parallel straight infinite lanes in a racing track. There are also N race cars which race in these tracks. Car i starts at position p[i] at lane i, and moves with constant speed v[i]. All cars start moving at the same time. We call a race car contender, if at some time t >= 0 the car is the leader (i.e. We call a car j contender if there exists a t such that for all 1<= i <= N, p[i] + t * v[i] <= p[j] + t * v[j]).
+
+Given initial positions and speeds of cars, your task is to write a program which counts of the number of cars which are contenders.
+
+Constraints:
+
+    2 <= N <= 10^6
+    p[i] is a non-negative integer such that 0 <= p[i] <= 10^6 
+    v[i] is a positive integer such that 0 < v[i] <= 10^6.
+
+Input
+In the first line of input you're given N. In each of the next N lines, you're given p[i] and v[i] separated by a single space, which are the initial position and the speed of car i.
+
+Output
+Output consists of just a single integer number which denotes the number of cars which are contenders.
+ 
+Sample Input
+
+4
+0 3
+2 1
+2 2
+1 3
+
+Sample Output
+
+3
+
+Explanation
+Car #2 and #3 are the leaders at time 0, Car #4 becomes leader at time 1. Since Car #1 is always behind Car #4, it can never be a leader. Therefore, only 3 of the cars are contenders.

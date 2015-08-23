@@ -1,0 +1,41 @@
+Player A and B , agree to play several games.
+
+Game rules:-
+
+1. A game never ends in a draw.
+
+2. Player "A" starts first in the first game.
+
+3. Player who starts a game has probability "P" of winning that game.
+
+4. The one who loses starts the new game.
+
+Everyone knows no one settles after losing a game. One more game please!!, is the word of mouth whenever someone loses. This way people end up playing many games.
+
+Now A wants to know the probability that he will win the Nth game.
+
+Input:
+First line - probability P.
+Second line - Q ( Number of query ).
+Next Q lines, each have an integer N.  
+
+Output:
+For each query output the probability that A will win Nth game.
+Output the answer rounded to 4 decimal places. While rounding to 4 decimal place 0.12345 becomes 0.1235, 0.43531 becomes 0.4353 and 0.32768 becomes 0.3277.
+
+Constraint :-
+
+0.0 <= P <= 1.0 
+0 < Q <= 200000
+0 < N <= 1000000
+
+Sample Input:-
+0.2
+3
+1
+4
+7
+Sample Output:-
+0.2000
+0.4352
+0.4860
